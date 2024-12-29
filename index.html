@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estrazione Tombola</title>
+  <style>
+    /* Stile della pagina */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      background-color: #f7f7f7;
+    }
+    h1 {
+      color: #4CAF50;
+    }
+    .number {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin: 20px;
+      color: #333;
+    }
+    .tabellone {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 5px;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    .cell {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      border: 1px solid #ddd;
+      background-color: white;
+      color: #333;
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .estratto {
+      background-color: #4CAF50;
+      color: white;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin: 10px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Estrazione Tombola</h1>
+  <button onclick="estraiNumero()">Estrai Numero</button>
+  <button onclick="nuovaPartita()">Nuova Partita</button>
+  <div class="number" id="numeroEstratto">--</div>
+  <div class="tabellone" id="tabellone"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
